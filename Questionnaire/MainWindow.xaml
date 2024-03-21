@@ -1,0 +1,35 @@
+﻿<Window x:Class="PrincessQuestionnaire.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d"
+        Title="Princess Questionnaire" Height="350" Width="525">
+    <Grid
+        >
+        <StackPanel>
+            <TextBox x:Name="NameTextBox" GotFocus="TextBox_GotFocus" LostFocus="TextBox_LostFocus"/>
+            <StackPanel x:Name="PetsPanel">
+                <TextBlock>Любимые питомцы:</TextBlock>
+                <RadioButton GroupName="Pets" Content="Единорог"/>
+                <RadioButton GroupName="Pets" Content="Дракон"/>
+                <RadioButton GroupName="Pets" Content="Феникс"/>
+            </StackPanel>
+            <StackPanel x:Name="Cartoons2DPanel">
+                <TextBlock>Любимый 2D мультфильм:</TextBlock>
+                <RadioButton GroupName="Cartoons2D" Content="Белоснежка"/>
+                <RadioButton GroupName="Cartoons2D" Content="Золушка"/>
+            </StackPanel>
+            <StackPanel x:Name="Cartoons3DPanel">
+                <TextBlock>Любимый 3D мультфильм:</TextBlock>
+                <RadioButton GroupName="Cartoons3D" Content="Холодное сердце"/>
+                <RadioButton GroupName="Cartoons3D" Content="Рапунцель"/>
+            </StackPanel>
+            <TextBox x:Name="InterestsTextBox" GotFocus="TextBox_GotFocus" LostFocus="TextBox_LostFocus" />
+            <Button Content="Отправить" Click="SubmitButton_Click"/>
+        </StackPanel>
+    </Grid>
+    
+
+</Window>
+    
